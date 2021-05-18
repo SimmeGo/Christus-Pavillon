@@ -10,9 +10,9 @@ class Popup {
     close() {};
 }
 
-WA.openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
+//WA.openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
 
-/**let helloWorldPopup;
+let helloWorldPopup;
 
 // Open the popup when we enter a given zone
 helloWorldPopup = WA.onEnterZone('WasserZone', () => {
@@ -30,4 +30,3 @@ helloWorldPopup = WA.onEnterZone('WasserZone', () => {
 WA.onLeaveZone('WasserZone', () => {
     helloWorldPopup.close();
 });
-*/

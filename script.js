@@ -1,7 +1,7 @@
 (()=>{"use strict";console.log("Script started successfully"),WA.openCoWebSite("https://workadventu.re")})();
 //# sourceMappingURL=script.js.map
 =======
-WA.sendChatMessage('Hello world', 'Mr Robot');
+WA.sendChatMessage(message: 'Hello world', author: 'Mr Robot');
 
 class Popup {
     /**
@@ -10,7 +10,7 @@ class Popup {
     close() {};
 }
 
-//openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
+WA.openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
 
 /**let helloWorldPopup;
 

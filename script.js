@@ -12,6 +12,10 @@ class Popup {
 
 //WA.openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
 
+WA.onEnterZone('WasserZone', () => {
+    WA.sendChatMessage("Hello!", 'Mr Robot');
+})
+
 let helloWorldPopup;
 
 // Open the popup when we enter a given zone

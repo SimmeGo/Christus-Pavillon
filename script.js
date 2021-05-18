@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 (()=>{"use strict";console.log("Script started successfully"),WA.openCoWebSite("https://workadventu.re")})();
 //# sourceMappingURL=script.js.map
 =======
@@ -32,4 +31,3 @@ WA.onLeaveZone('WasserZone', () => {
     helloWorldPopup.close();
 });
 */
->>>>>>> Stashed changes

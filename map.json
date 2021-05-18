@@ -9,7 +9,7 @@
      "export":
         {
          "format":"json",
-         "target":"..\/CP-map\/map.json"
+         "target":"map.json"
         }
     },
  "height":100,
@@ -74,6 +74,12 @@
                  "height":125.100887812752,
                  "id":3,
                  "name":"WasserText",
+                 "properties":[
+                        {
+                         "name":"VOID",
+                         "type":"string",
+                         "value":"WasserText"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -105,6 +111,12 @@
          "id":28,
          "name":"WasserZone",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"WasserZone"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":48,

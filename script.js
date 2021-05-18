@@ -10,7 +10,7 @@ class Popup {
     close() {};
 }
 
-openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
+WA.openPopup("WasserText", 'Hallo!', [label: "OK", className: "normal", callback: (popup) => popup.close()]);
 
 /**let helloWorldPopup;
 

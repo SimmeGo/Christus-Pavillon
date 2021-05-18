@@ -1,5 +1,3 @@
-WA.sendChatMessage(message: 'Hello world', author: 'Mr Robot');
-
 WA.sendChatMessage("Hallihallo", "Irgendwer");
 
 class Popup {

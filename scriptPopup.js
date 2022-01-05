@@ -1,4 +1,4 @@
-WA.sendChatMessage("Hallihallo", "Irgendwer");
+WA.sendChatMessage("Hallo! Schön, dass du da bist. Ich bin der Pförtner. Ich helfe dir ein wenig beim Start mit dieser Plattform. Du wirst schon bald merken, dass das gar nicht so schwierig ist.", "Pförtner");
 
 class Popup {
     /**
@@ -42,7 +42,7 @@ WasserPopup2 = WA.onEnterZone('WasserZone2', () => {
 });
 
 WasserPopup3 = WA.onEnterZone('WasserZone3', () => {
-    WA.openPopup("WasserText", 'In dieser Kammer hast Du die Möglichkeit, Dir darüber Gedanken zu machen oder dich mit anderen auszutauschen, was Deinen /Euren Lebensfluss bisher angetrieben hat, was ihn ins Stocken bringt oder vorantreibt. Gibt es eine Quelle (z.B. Deinen Glauben, Gott o.ä.), die Dir Antrieb gibt? Helfen Dir solche Veranstaltungen wie diese, weiter zu schwimmen?', [
+    WA.openPopup("WasserText", 'In dieser Kammer hast Du die Möglichkeit, Dir darüber Gedanken zu machen oder dich mit anderen auszutauschen, was Deinen/Euren Lebensfluss bisher angetrieben hat, was ihn ins Stocken bringt oder vorantreibt. Gibt es eine Quelle (z.B. Deinen Glauben, Gott o.ä.), die Dir Antrieb gibt? Helfen Dir solche Veranstaltungen wie diese, weiter zu schwimmen?', [
 	{
         label: "Schließen",
         className: "primary",

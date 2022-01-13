@@ -312,3 +312,7 @@ PaypalPopup = WA.room.onEnterLayer('paypal').subscribe(() => {
     }
 	]);
 });
+
+WA.room.onLeaveLayer("paypal").subscribe(() => {
+    PaypalPopup.close();
+})

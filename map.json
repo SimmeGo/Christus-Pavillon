@@ -899,20 +899,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":220,
-                 "x":665.333333333333,
-                 "y":2382.66666666667
-                }, 
-                {
-                 "height":0,
-                 "id":15,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":-48,
-                 "y":2376
+                 "width":248,
+                 "x":644,
+                 "y":2226.66666666667
                 }],
          "opacity":1,
          "type":"objectgroup",

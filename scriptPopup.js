@@ -285,3 +285,25 @@ LichtPopup2 = WA.onEnterZone('LichtZone2', () => {
     }
 	]);
 });
+
+let PaypalPopup;
+
+PaypalPopup = WA.onEnterZone('paypal', () => {
+    WA.openPopup("PaypalText", 'Hier kannst du für den Erhalt und die Weiterentwicklung dieser virtuellen Umgebung des Klosters spenden. Damit das Geld an der richtigen Stelle ankommt, gib in dem Feld "Nachricht" bei Paypal "EJBZ" ein. Dann kann die Buchhaltung die Spende richtig zuordnen. Vielen Dank im Voraus für deine Unterstützung! ', [
+	{
+        label: "Schließen",
+        callback: (Popup) => {
+            // Close the popup when the "Close" button is pressed.
+            Popup.close();
+        }
+    }
+	{
+        label: "Zu Paypal",
+        className: "primary",
+        callback: (Popup) => {
+            // Close the popup when the "Close" button is pressed.
+            WA.nav.openTab('https://www.paypal.com/paypalme/KlosterVolkenroda');
+        }
+    }
+	]);
+});

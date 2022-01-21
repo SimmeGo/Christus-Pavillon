@@ -1,5 +1,3 @@
-WA.sendChatMessage("Hallo! Schön, dass du da bist. Ich bin der Pförtner. Ich helfe dir ein wenig beim Start mit dieser Plattform. Du wirst schon bald merken, dass das gar nicht so schwierig ist.", "Pförtner");
-
 class Popup {
     /**
      * Closes the popup

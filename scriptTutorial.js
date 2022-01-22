@@ -1,6 +1,6 @@
-let PaypalPopup;
+let startPopup;
 
-PaypalPopup = WA.room.onEnterLayer('start').subscribe(() => {
+startPopup = WA.onInit().then(() => {
     WA.ui.openPopup("startText", 'Hallo und herzlich Willkommen im Kloster Volkenroda! Ich bin Ida und ich werde dir erklären, wie du dich hier in der virtuellen Klosterumgebung ganz einfach zurechtfindest. Solltest du WorkAdventure schon kennen, dann kannst du diese Einführung überspringen und direkt nach links die Treppe hinuntergehen. Wenn nicht, dann klicke jetzt auf die Schaltfläche "Weiter". ', [
 		{
 	        label: "Schließen",
@@ -27,6 +27,25 @@ PaypalPopup = WA.room.onEnterLayer('start').subscribe(() => {
 	    		}])
     	   }
        }
+	]);
+});
+
+WA.room.onLeaveLayer("start").subscribe(() => {
+    Popup.close();
+});
+
+let ingoPopup;
+
+ingoPopup = WA.room.onEnterLayer("ingo").subscribe(() => {
+    WA.ui.openPopup("ingoText", 'Hallo, schön, dass du da bist. Wie du vielleicht schon bemerkt hast, gibt es hier einige Bereiche, in denen du mit der Welt interagieren kannst. Siehst du den Tisch mit der Vase darauf? Setze dich hin, dann öffnet sich eine Website.', [
+		{
+	        label: "Schließen",
+			className: "normal",
+	        callback: (Popup) => {
+	            // Close the popup when the "Close" button is pressed.
+	            Popup.close();
+	        }
+    	}
 	]);
 });
 

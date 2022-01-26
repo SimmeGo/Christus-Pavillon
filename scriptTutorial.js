@@ -31,7 +31,7 @@ startPopup = WA.onInit().then(() => {
 });
 
 WA.room.onLeaveLayer("start").subscribe(() => {
-    Popup.close();
+    startPopup.close();
 });
 
 let ingoPopup;
@@ -50,7 +50,7 @@ ingoPopup = WA.room.onEnterLayer("ingo").subscribe(() => {
 });
 
 WA.room.onLeaveLayer("start").subscribe(() => {
-    Popup.close();
+    ingoPopup.close();
 });
 
 let meetingPopup;
@@ -69,7 +69,7 @@ meetingPopup = WA.room.onLeaveLayer("MeetingInnenhof").subscribe(() => {
 });
 
 WA.room.onLeaveLayer("DoorPforte").subscribe(() => {
-    Popup.close();
+    meetingPopup.close();
 });
 
 let eugenPopup;
@@ -90,7 +90,7 @@ eugenPopup = WA.room.onEnterLayer("eugen").subscribe(() => {
 	        callback: (Popup) => {
 	            // Close the popup when the "Close" button is pressed.
 				Popup.close();
-	            WA.ui.openPopup("startText", 'Immer, wenn du in der Nähe des Avatars eines anderen Nutzers bist, öffnet sich eine „Bubble“. Die erlaubt es, miteinander zu reden und euch zu sehen. In einer Bubble können maximal 4 Personen gleichzeitig miteinander kommunizieren.', [
+	            WA.ui.openPopup("eugenText", 'Immer, wenn du in der Nähe des Avatars eines anderen Nutzers bist, öffnet sich eine „Bubble“. Die erlaubt es, miteinander zu reden und euch zu sehen. In einer Bubble können maximal 4 Personen gleichzeitig miteinander kommunizieren.', [
 				{
 			        label: "Schließen",
 					className: "normal",
@@ -105,7 +105,7 @@ eugenPopup = WA.room.onEnterLayer("eugen").subscribe(() => {
    	        callback: (Popup) => {
    	            // Close the popup when the "Close" button is pressed.
    				Popup.close();
-   	            WA.ui.openPopup("startText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Solltest du das mal ausprobieren, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Viel Spaß!', [
+   	            WA.ui.openPopup("eugenText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Solltest du das mal ausprobieren, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Viel Spaß!', [
    				{
    			        label: "Schließen",
    					className: "normal",
@@ -123,5 +123,5 @@ eugenPopup = WA.room.onEnterLayer("eugen").subscribe(() => {
 
 
 WA.room.onLeaveLayer("eugen").subscribe(() => {
-    Popup.close();
+    eugenPopup.close();
 });

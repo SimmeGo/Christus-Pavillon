@@ -312,5 +312,5 @@ PaypalPopup = WA.room.onEnterLayer('paypal').subscribe(() => {
 });
 
 WA.room.onLeaveLayer("paypal").subscribe(() => {
-    Popup.close();
+    PayPalPopup.close();
 });

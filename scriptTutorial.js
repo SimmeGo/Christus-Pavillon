@@ -83,8 +83,8 @@ eugenPopup = WA.room.onEnterLayer("eugen").then(() => {
 	            // Close the popup when the "Close" button is pressed.
 	            Popup.close();
 	        }
-    	},
-		{
+        },
+	    {
 	        label: "Weiter",
 	        className: "primary",
 	        callback: (Popup) => {
@@ -98,7 +98,6 @@ eugenPopup = WA.room.onEnterLayer("eugen").then(() => {
 			            // Close the popup when the "Close" button is pressed.
 			            Popup.close();
 			    	}
-	    		}])
     	   },
            {
    	        label: "Weiter",
@@ -115,9 +114,10 @@ eugenPopup = WA.room.onEnterLayer("eugen").then(() => {
    			            Popup.close();
    			    	}
    	    		}])
+            }
        	   }
-          }
-       }
+            ])}
+        }
 	]);
 });
 

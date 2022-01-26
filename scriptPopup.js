@@ -313,5 +313,5 @@ PaypalPopup = WA.room.onEnterLayer('paypal').subscribe(() => {
 
 WA.room.onLeaveLayer("paypal").subscribe(() => {
     WA.chat.sendChatMessage("test", "Mr. Test");
-    PayPalPopup.close();
+    PayPalPopup = Popup.close();
 });

@@ -105,7 +105,7 @@ eugenPopup = WA.room.onEnterLayer("eugen").subscribe(() => {
            	        callback: (Popup) => {
            	            // Close the popup when the "Close" button is pressed.
            				Popup.close();
-           	            WA.ui.openPopup("eugenText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Solltest du das mal ausprobieren, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Viel Spaß!', [
+           	            WA.ui.openPopup("eugenText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Wenn du die Bubbles mal ausprobieren willst, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Dort ist reden erlaubt. :) Viel Spaß!', [
            				{
            			        label: "Schließen",
            					className: "normal",

@@ -24,7 +24,7 @@ startPopup = WA.onInit().then(() => {
 			            // Close the popup when the "Close" button is pressed.
 			            Popup.close();
 			    	}
-	    		}])
+	    		}]);
     	   }
        }
 	]);
@@ -98,25 +98,26 @@ eugenPopup = WA.room.onEnterLayer("eugen").subscribe(() => {
 			            // Close the popup when the "Close" button is pressed.
 			            Popup.close();
 			    	}
-    	   },
-           {
-   	        label: "Weiter",
-   	        className: "primary",
-   	        callback: (Popup) => {
-   	            // Close the popup when the "Close" button is pressed.
-   				Popup.close();
-   	            WA.ui.openPopup("eugenText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Solltest du das mal ausprobieren, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Viel Spaß!', [
-   				{
-   			        label: "Schließen",
-   					className: "normal",
-   			        callback: (Popup) => {
-   			            // Close the popup when the "Close" button is pressed.
-   			            Popup.close();
-   			    	}
-   	    		}])
+        	    },
+                {
+           	        label: "Weiter",
+           	        className: "primary",
+           	        callback: (Popup) => {
+           	            // Close the popup when the "Close" button is pressed.
+           				Popup.close();
+           	            WA.ui.openPopup("eugenText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Solltest du das mal ausprobieren, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Viel Spaß!', [
+           				{
+           			        label: "Schließen",
+           					className: "normal",
+           			        callback: (Popup) => {
+           			            // Close the popup when the "Close" button is pressed.
+           			            Popup.close();
+           			    	}
+           	    		}]);
+                      }
+               	   }
+               ]);
             }
-       	   }
-            ])}
         }
 	]);
 });

@@ -74,7 +74,7 @@ WA.room.onLeaveLayer("DoorPforte").subscribe(() => {
 
 let eugenPopup;
 
-eugenPopup = WA.room.onEnterLayer("eugen").then(() => {
+eugenPopup = WA.room.onEnterLayer("eugen").subscribe(() => {
     WA.ui.openPopup("eugenText", 'Hey, voll cool, dass du am Start bist! Hat dir schon jemand gezeigt, wie du richtig schnell davondüsen kannst? Halte einfach die SHIFT-Taste gedrückt, während du deinen Avatar navigierst und schon geht die Post ab! Bevor du aber abhaust, möchte ich dir noch eine Sache erklären:', [
 		{
 	        label: "Schließen",

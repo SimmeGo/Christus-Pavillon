@@ -52,3 +52,76 @@ ingoPopup = WA.room.onEnterLayer("ingo").subscribe(() => {
 WA.room.onLeaveLayer("start").subscribe(() => {
     Popup.close();
 });
+
+let meetingPopup;
+
+meetingPopup = WA.room.onLeaveLayer("MeetingInnenhof").subscribe(() => {
+    WA.ui.openPopup("lagerraumText", 'Super, du hast den Lagerraum erkundet! Gehe jetzt wieder nach draußen und folge weiter den Pfeilen. Dann wirst du Eugen, die Sportskanone, antreffen.', [
+		{
+	        label: "Schließen",
+			className: "normal",
+	        callback: (Popup) => {
+	            // Close the popup when the "Close" button is pressed.
+	            Popup.close();
+	        }
+    	}
+	]);
+});
+
+WA.room.onLeaveLayer("DoorPforte").subscribe(() => {
+    Popup.close();
+});
+
+let eugenPopup;
+
+eugenPopup = WA.room.onEnterLayer("eugen").then(() => {
+    WA.ui.openPopup("eugenText", 'Hey, voll cool, dass du am Start bist! Hat dir schon jemand gezeigt, wie du richtig schnell davondüsen kannst? Halte einfach die SHIFT-Taste gedrückt, während du deinen Avatar navigierst und schon geht die Post ab! Bevor du aber abhaust, möchte ich dir noch eine Sache erklären:', [
+		{
+	        label: "Schließen",
+			className: "normal",
+	        callback: (Popup) => {
+	            // Close the popup when the "Close" button is pressed.
+	            Popup.close();
+	        }
+    	},
+		{
+	        label: "Weiter",
+	        className: "primary",
+	        callback: (Popup) => {
+	            // Close the popup when the "Close" button is pressed.
+				Popup.close();
+	            WA.ui.openPopup("startText", 'Immer, wenn du in der Nähe des Avatars eines anderen Nutzers bist, öffnet sich eine „Bubble“. Die erlaubt es, miteinander zu reden und euch zu sehen. In einer Bubble können maximal 4 Personen gleichzeitig miteinander kommunizieren.', [
+				{
+			        label: "Schließen",
+					className: "normal",
+			        callback: (Popup) => {
+			            // Close the popup when the "Close" button is pressed.
+			            Popup.close();
+			    	}
+	    		}])
+    	   },
+           {
+   	        label: "Weiter",
+   	        className: "primary",
+   	        callback: (Popup) => {
+   	            // Close the popup when the "Close" button is pressed.
+   				Popup.close();
+   	            WA.ui.openPopup("startText", 'Es gibt aber auch stille Bereiche, in denen das Reden miteinander nicht erlaubt wird wie hier bei der Pforte bisher. Solltest du das mal ausprobieren, triff dich mit einer anderen Person auf der grünen Wiese, die du findest, wenn du die Treppe hier hinuntergehst. Viel Spaß!', [
+   				{
+   			        label: "Schließen",
+   					className: "normal",
+   			        callback: (Popup) => {
+   			            // Close the popup when the "Close" button is pressed.
+   			            Popup.close();
+   			    	}
+   	    		}])
+       	   }
+          }
+       }
+	]);
+});
+
+
+WA.room.onLeaveLayer("eugen").subscribe(() => {
+    Popup.close();
+});

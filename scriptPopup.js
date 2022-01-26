@@ -305,12 +305,12 @@ PaypalPopup = WA.room.onEnterLayer('paypal').subscribe(() => {
         className: "primary",
         callback: (Popup) => {
             // Close the popup when the "Close" button is pressed.
-           WA.nav.openTab('https://www.paypal.com/paypalme/KlosterVolkenroda'); 
+           WA.nav.openTab('https://www.paypal.com/paypalme/KlosterVolkenroda');
         }
     }
 	]);
 });
 
 WA.room.onLeaveLayer("paypal").subscribe(() => {
-    PaypalPopup.close();
+    Popup.close();
 });
